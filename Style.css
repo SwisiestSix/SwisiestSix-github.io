@@ -5,7 +5,8 @@ html, body {
 } 
 }
 .table tr:nth-child(even) {
-    background-color: lightgrey
+    background-color: lightgrey;
+    z-index: 50;
 }
 .table tr:hover, .table tr:nth-child(even):hover{
 
