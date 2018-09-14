@@ -1,0 +1,49 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    background-image: url("./img/background.jpg");
+} 
+}
+.table tr:nth-child(even) {
+    background-color: lightgrey
+}
+.table tr:hover, .table tr:nth-child(even):hover{
+
+background-color: lightsalmon
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+
+.row {
+    position:absolute;
+    left: 20px;
+    width: 100%;
+    display: table;
+    clear: both;
+}
+.column {
+    font-size: 150%;
+}
+.form-group {
+left: 10%
+}
+.contentbox{
+    position: absolute;
+width: 1200px ;
+height: 600px ;
+padding: 25px ;
+margin: 25px ;
+z-index: 2 ;
+top: 100px ;
+left:  180px ;
+background-color: white
+
+}
