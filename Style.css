@@ -3,7 +3,7 @@ html, body {
     width: 100%;
     background-image: url("./img/background.jpg");
 } 
-}
+
 .table tr:nth-child(even) {
     background-color: lightgrey;
     z-index: 50;
