@@ -1,0 +1,49 @@
+/* Background CSS */
+html, body {
+    height: 100%;
+    width: 100%;
+    background-image: url("./img/background.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+} 
+
+.table tr:hover, .table tr:nth-child(even):hover{
+
+/* Box Background Color */
+background-color: lightsalmon
+}
+
+/* WishList & Login Contentbox */
+.contentbox{
+    position: absolute;
+    width: 1200px ;
+    height: 620px ;
+    padding: 30px ;
+    margin: 25px ;
+    z-index: 2 ;
+    top: 100px ;
+    left:  180px ;
+    background-color: rgb(255,255,255,0.5);
+    border-radius: 10px;
+    }
+
+/* Main Page Contentbox */
+.contentbox1{
+    position: absolute;
+    width: 1200px ;
+    height: 655px ;
+    padding: 30px ;
+    margin: 25px ;
+    z-index: 2 ;
+    top: 100px ;
+    left:  180px ;
+    background-color: rgb(255,255,255,0.5);
+    border-radius: 10px;
+    }
+
+/* Main Page title font */
+    h1 {
+        font-family: courier;
+    }

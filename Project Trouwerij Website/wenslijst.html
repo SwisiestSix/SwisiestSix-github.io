@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>A Special Day Wenslijst</title>
+
+<!--Bootstrap Link-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<!--Custom CSS Link-->
+<link rel="stylesheet" href="./Style.css">
+
+  <!--Link Jquery-->
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous">
+  </script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js%22%3E">
+  </script>
+  
+  <!--Creating A New Item-->
+  <script>
+    var ItemNummer= 2;
+    function example_append() {''
+    var newline = $( "<li class='list-group-item' id='Item"   + ItemNummer +"'>"+ $('#todoInput').val() + "&nbsp&nbsp&nbsp&nbsp&nbsp<button onclick='deleteItem("+ItemNummer+")'>Delete</button></li>" ).hide().fadeIn(1000);
+$('#wishList').append(newline)
+
+/* $('.form-control')[0].reset() */;
+ItemNummer++
+
+/* Deleting An Existing Item */;
+}
+function deleteItem(Item){
+  $('#Item'+ Item).fadeOut(500,function()
+                        {$('li').remove("#Item" + Item)
+                         }
+                 );
+}
+</script>
+<!--End Jquery Scripts-->
+</head>
+<body>
+    <!--Navigatie Bar-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#"><img src="./img/logo.png" alt="Logo"height="90" width="90"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link" href="./hoofdpagina.html">A Special Day</a>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="./wenslijst.html">Wishlist<span class="sr-only">(current)</span></a> 
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./inloggen en aanmelden.html">Inloggen/Registreren</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+
+    <!--Start of Wishlist HTML-->
+    <div class= "contentbox">
+      <div id="wishbox">
+        <h1>Wedding Wishlist</h1>
+        <br>
+        <form id="todoForm">
+          <input type="text" id="todoInput">
+
+          <!--Add Gift Button-->
+          <button type="button" onclick="example_append()">Add Gift</button>
+        </form>
+        <br>
+        <ol class="list-group" id="wishList">
+          <!--Here is where listed items will be created-->
+        </ol>
+        </div>
+    </div>
+</body>
+</html>
